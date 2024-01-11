@@ -1,8 +1,7 @@
-import json
 from pyspark import SparkContext
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import udf, max, mean, std, median
-from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DoubleType, BooleanType, DateType, FloatType, MapType
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DateType, FloatType
 from math import radians, sin, cos, sqrt, atan2
 
 def calculate_distance(lat1, lng1, lat2, lng2):
